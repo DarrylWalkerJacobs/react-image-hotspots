@@ -1,6 +1,6 @@
 {
-  "name": "react-image-hotspots",
-  "version": "1.7.1",
+  "name": "@jacobsdigitalfactory/react-image-hotspots",
+  "version": "1.7.2",
   "description": "React component for rendering images with hotspots",
   "main": "dist/ImageHotspots.js",
   "files": [
@@ -13,7 +13,7 @@
     "lint": "standard --fix",
     "build": "babel ./src --out-dir ./dist -s inline",
     "build:storybook": "build-storybook -c .storybook -o docs",
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run build",
     "start": "start-storybook"
   },
   "repository": {
@@ -47,11 +47,11 @@
     "babel-loader": "^8.0.6",
     "jest": "^24.8.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^18.0.0",
     "standard": "^13.1.0"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": ">=^16.8.6 <= 18"
   },
   "standard": {
     "env": [
