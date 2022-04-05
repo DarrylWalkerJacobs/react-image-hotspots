@@ -493,6 +493,7 @@ class ImageHotspots extends React.Component {
 
     return (
       <div
+        className='react-image-hotspots'
         ref={this.container}
         style={containerStyle}
         onMouseOut={event => {
@@ -534,7 +535,7 @@ class ImageHotspots extends React.Component {
           hotspots &&
           <div style={hotspotsStyle}>
             {
-              hotspots.map((hotspot) => <Hotspot {...hotspot} />)
+              hotspots.map((hotspot, i) => <Hotspot key={i} {...hotspot} />)
             }
           </div>
         }
